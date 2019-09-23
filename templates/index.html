@@ -10,24 +10,29 @@
 
 <!-- Body de la pagina -->
 {% block main %}
-<a href="{{ url_for('registro') }}">Ves a tu registro</a>
 
-<form action="{{ url_for('enviar') }}" method="POST">
+<section class="formulario">
+  
+  <a href="{{ url_for('registro') }}">Ves a tu registro</a>
 
-        <label for="fecha">Fecha de la factura: </label><br />
-        <input type="date" name="fecha" id="" /><br />
+  <form action="{{ url_for('enviar') }}" method="POST">
 
-        <label for="lugar">Lugar de estacionamiento: </label><br />
-        <input type="text" name="lugar" id=""><br />
-    
-        <label for="dinero">Total de gasto: </label><br />
-        <input type="number" name="dinero" id=""><br />
-    
-        <label for="horas">Horas que se ha estado pagando el servicio : </label><br />
-        <input type="number" name="horas" id="" /><br /><br />
-    
-        <input type="submit" value="Enviar" />
-    
-      </form>
+          <label for="fecha">Fecha de la factura: </label><br />
+          <input type="date" name="fecha" id="" /><br />
+
+          <label for="lugar">Lugar de estacionamiento: </label><br />
+          <input type="text" name="lugar" id=""><br />
+      
+          <label for="dinero">Total de gasto: </label><br />
+          <input type="number" name="dinero" id=""><br />
+      
+          <label for="horas">Horas que se ha estado pagando el servicio : </label><br />
+          <input type="number" name="horas" id="" /><br /><br />
+      
+          <input type="submit" value="Enviar" />
+      
+        </form>
+
+</section>
 
 {% endblock %}

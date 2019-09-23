@@ -1,0 +1,9 @@
+body{
+    display: grid;
+}
+
+
+.formulario{
+    grid-auto-columns: 4rem;
+    background-color: rgb(181, 235, 221);
+}

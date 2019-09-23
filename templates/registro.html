@@ -5,10 +5,15 @@
 {{ super() }}
 - Registro {% endblock %} 
 
-<!-- Body de la pagina -->
+<!-- Body de la pagina, aqui es donde se muestran los datos que hay en el archivo csv -->
 {% block main %}
-
 
 <a href="{{ url_for('home') }}"> Volver al Inicio</a>
 
+{% for index in  registros %}
+
+<h1>{{ linea1 }}</h1>
+
+{% endfor %}
+ 
 {% endblock %}
