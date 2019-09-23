@@ -8,12 +8,7 @@
 <!-- Body de la pagina -->
 {% block main %}
 
-<h1>Bienvenido a tu registro</h1>
 
-<h2>Hemos guardado tu registro, aqui tienes los ultimos datos registrados:</h2>
-<p>Fecha registrada: {{ fecha }}.</p>
-<p>Lugar : {{ lugar }}.</p>
-<p>Dinero gastado: {{ dinero }}€.</p>
-<p>Horas {{ horas }}.</p>
+<a href="{{ url_for('home') }}"> Volver al Inicio</a>
 
 {% endblock %}
